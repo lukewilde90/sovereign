@@ -20,6 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -36,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			
 		<?php endif; ?>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,8 +74,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+
+
+				<div class="nav__phonenumber">
+
+					<a href="">01980 621621</a>
+
+				</div>
+
+				<a class="button--contactus" href="">Contact Us</a>
+
 			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
+			
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
